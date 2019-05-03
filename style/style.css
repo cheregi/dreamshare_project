@@ -1,0 +1,304 @@
+@charset "UTF-8";
+/*Colors*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+*:not(input) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  font-family: Montserrat;
+  background-image: url("../images/header.png");
+  background-size: cover;
+  padding: 30px 20px 150px;
+  text-align: center;
+  color: white;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 130px;
+}
+
+header nav ul a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  /*copied part for adobe*/
+  font-size: 14px;
+  font-weight: 700;
+}
+
+header nav ul a:hover {
+  border-color: white;
+}
+
+header h1 {
+  /*copied from adobe*/
+  font-size: 20px;
+  /* Approximation causée par une substitution de police */
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+header h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 33px;
+}
+
+header div > a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 20px;
+  background-color: #ff4e50;
+  padding: 15px 50px;
+}
+
+main h3 {
+  font-family: Montserrat;
+  color: #333333;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+main #steps {
+  padding: 40px 0px;
+}
+
+main #steps article {
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 12px;
+  background-size: cover;
+  height: 238px;
+  width: 300px;
+  border-radius: 4px;
+  background-position: center;
+  /*remove the repeat and make it fit*/
+  /*align the text on the BOTTOM of the card*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  /*default styling*/
+  color: white;
+}
+
+main #steps article h4 {
+  background-color: #ff4e50;
+  padding: 6px 14px;
+  border-radius: 14px;
+  /*copied for adobe*/
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+main #steps article h5 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+
+main #steps article p {
+  font-family: Roboto;
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+main #steps article:nth-of-type(1) {
+  background-image: url("../images/step1desk.png");
+}
+
+main #steps article:nth-of-type(2) {
+  background-image: url("../images/step2desk.png");
+}
+
+main #steps article:nth-of-type(3) {
+  background-image: url("../images/step3desk.png");
+}
+
+main #evil-form p {
+  font-family: Roboto;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+main #evil-form form {
+  text-align: center;
+}
+
+main #evil-form form input[type="text"] {
+  /*copied for adobe*/
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  width: 280px;
+  height: 40px;
+  padding-left: 16px;
+  display: block;
+  margin: 10px auto;
+}
+
+main #evil-form form input[type="submit"] {
+  /*copied for Adobe*/
+  border-radius: 20px;
+  background-color: #ff4e50;
+  width: 280px;
+  height: 40px;
+  /*remove border*/
+  border: 0;
+  /*copied form adobe*/
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 13.96px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+footer {
+  border-top: 4px solid #ff4e50;
+  text-align: center;
+}
+
+footer h1 {
+  /*copied for Adobe*/
+  font-family: Montserrat;
+  color: #ff4e50;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+footer h2 {
+  /*Copied for Adobe*/
+  font-family: Montserrat;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 18px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+footer ul a {
+  /*copid form adobe*/
+  font-family: Roboto;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  /*a reset*/
+  text-decoration: none;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: auto;
+    width: 768px;
+  }
+  .flexy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header h2 {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flexline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main #steps article {
+    margin: 10px;
+    width: 236px;
+    height: 400px;
+  }
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #evil-form form input[type="text"] {
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

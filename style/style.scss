@@ -1,0 +1,288 @@
+/*Colors*/
+$white: white;
+$red: #ff4e50;
+$lgrey: #999999;
+$cgrey: #cccccc;
+$diffgrey:#666666;
+$dark: #333333;
+
+* {
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+}
+
+*:not(input) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    font-family: Montserrat;
+    background-image: url("../images/header.png");
+    background-size: cover;
+    padding: 30px 20px 150px;
+    text-align: center;
+    color: $white;
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+            margin-bottom: 130px;
+
+            a {
+                color: $white;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 20px;
+                border: 3px solid transparent;
+                /*copied part for adobe*/
+                font-size: 14px;
+                font-weight: 700;
+
+                &:hover {
+                    border-color: $white;
+                }
+            }
+        }
+    }
+
+    h1 {
+        /*copied from adobe*/
+        font-size: 20px;
+        /* Approximation causée par une substitution de police */
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 33px;
+    }
+
+    div>a {
+        text-decoration: none;
+        color: $white;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 20px;
+        background-color: $red;
+        padding: 15px 50px;
+    }
+}
+
+main {
+
+    h3 {
+        font-family: Montserrat;
+        color: $dark;
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 19px;
+    }
+
+    #steps {
+        padding: 40px 0px;
+
+
+        article {
+            margin: auto;
+            padding: 20px;
+            margin-bottom: 12px;
+            background-size: cover;
+            height: 238px;
+            width: 300px;
+            border-radius: 4px;
+            background-position: center;
+            /*remove the repeat and make it fit*/
+            /*align the text on the BOTTOM of the card*/
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            /*default styling*/
+            color: $white;
+
+            h4 {
+                background-color: $red;
+                padding: 6px 14px;
+                border-radius: 14px;
+                /*copied for adobe*/
+                font-family: Montserrat;
+                font-size: 10px;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-bottom: 25px;
+            }
+
+            h5 {
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 19px;
+            }
+
+            p {
+                font-family: Roboto;
+                color: $cgrey;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+
+        article:nth-of-type(1) {
+            background-image: url("../images/step1desk.png");
+        }
+
+        article:nth-of-type(2) {
+            background-image: url("../images/step2desk.png");
+        }
+
+        article:nth-of-type(3) {
+            background-image: url("../images/step3desk.png");
+        }
+    }
+
+    #evil-form {
+        p {
+            font-family: Roboto;
+            color: $dark;
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        form {
+            text-align: center;
+
+            input[type="text"] {
+                /*copied for adobe*/
+                border-radius: 4px;
+                border: 1px solid $cgrey;
+                width: 280px;
+                height: 40px;
+                padding-left: 16px;
+                display: block;
+                margin: 10px auto;
+            }
+
+            input[type="submit"] {
+                /*copied for Adobe*/
+                border-radius: 20px;
+                background-color: $red;
+                width: 280px;
+                height: 40px;
+                /*remove border*/
+                border: 0;
+                /*copied form adobe*/
+                font-family: Montserrat;
+                color: #ffffff;
+                font-size: 13.96px;
+                font-weight: 700;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+footer {
+    border-top: 4px solid $red;
+    text-align: center;
+
+    h1 {
+        /*copied for Adobe*/
+        font-family: Montserrat;
+        color: $red;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 20px;
+    }
+
+    h2 {
+        /*Copied for Adobe*/
+        font-family: Montserrat;
+        color: $dark;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 18px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+
+        a {
+            /*copid form adobe*/
+            font-family: Roboto;
+            color: $diffgrey;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            /*a reset*/
+            text-decoration: none;
+            padding: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin: auto;
+        width: 768px;
+    }
+
+    .flexy {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    header h2 {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flexline {
+        display: flex;
+
+    }
+
+    main #steps article {
+        margin: 10px;
+        width: 236px;
+        height: 400px;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    main #evil-form form input[type="text"] {
+        display: inline-block;
+    }
+}
