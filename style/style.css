@@ -40,7 +40,6 @@ header nav ul a {
   padding: 10px 20px;
   border-radius: 20px;
   border: 3px solid transparent;
-  /*copied part for adobe*/
   font-size: 14px;
   font-weight: 700;
 }
@@ -50,9 +49,7 @@ header nav ul a:hover {
 }
 
 header h1 {
-  /*copied from adobe*/
   font-size: 20px;
-  /* Approximation causée par une substitution de police */
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -104,8 +101,6 @@ main #steps article {
   width: 300px;
   border-radius: 4px;
   background-position: center;
-  /*remove the repeat and make it fit*/
-  /*align the text on the BOTTOM of the card*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +114,6 @@ main #steps article {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  /*default styling*/
   color: white;
 }
 
@@ -127,7 +121,6 @@ main #steps article h4 {
   background-color: #ff4e50;
   padding: 6px 14px;
   border-radius: 14px;
-  /*copied for adobe*/
   font-family: Montserrat;
   font-size: 10px;
   font-weight: 400;
@@ -176,7 +169,6 @@ main #evil-form form {
 }
 
 main #evil-form form input[type="text"] {
-  /*copied for adobe*/
   border-radius: 4px;
   border: 1px solid #cccccc;
   width: 280px;
@@ -187,14 +179,11 @@ main #evil-form form input[type="text"] {
 }
 
 main #evil-form form input[type="submit"] {
-  /*copied for Adobe*/
   border-radius: 20px;
   background-color: #ff4e50;
   width: 280px;
   height: 40px;
-  /*remove border*/
   border: 0;
-  /*copied form adobe*/
   font-family: Montserrat;
   color: #ffffff;
   font-size: 13.96px;
@@ -208,7 +197,6 @@ footer {
 }
 
 footer h1 {
-  /*copied for Adobe*/
   font-family: Montserrat;
   color: #ff4e50;
   font-size: 16px;
@@ -218,7 +206,6 @@ footer h1 {
 }
 
 footer h2 {
-  /*Copied for Adobe*/
   font-family: Montserrat;
   color: #333333;
   font-size: 14px;
@@ -237,13 +224,11 @@ footer ul {
 }
 
 footer ul a {
-  /*copid form adobe*/
   font-family: Roboto;
   color: #666666;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
-  /*a reset*/
   text-decoration: none;
   padding: 10px;
 }
